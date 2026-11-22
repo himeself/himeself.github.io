@@ -83,7 +83,8 @@ body {
     50%       { opacity: 0.3; }
 }
 
-#bg-video {
+#bg-video,
+#bg-image {
     position: fixed;
     inset: 0;
     width: 100%;
@@ -93,6 +94,9 @@ body {
     opacity: 0.25;
     pointer-events: none;
 }
+
+#bg-image { display: none; }
+#bg-video.audio-only { opacity: 0; }
 
 .main-content {
     text-align: center;
